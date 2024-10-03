@@ -1,13 +1,83 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: blueviolet;
+  height: 10%;
+  margin-top: -22px;
+  text-align: center;
+}
+footer {
+  height: 10%;
+  background-color: blue;
+}
+task div {
+  margin-top: 30px;
+}
+task ul {
+  width: 400px;
+  display: flexbox;
+  margin-top: 40px;
+}
+task {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: burlywood;
+  margin-top: -22px;
+}
+
+/* ul li:nth-child(odd) {
+  background-color: rgb(228, 33, 195);
+}
+ul li:nth-child(even) {
+  background-color: rgb(17, 212, 92);
+} */
+task li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: antiquewhite;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.chbox {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+task label {
+  font-size: 3rem;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.delbtn {
+  font-size: 3rem;
+  width: 50px;
+  min-width: 50px;
+  cursor: pointer;
+}
+#task {
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid rgb(4, 64, 117);
+  background-color: transparent;
+}
+#addbtn {
+  margin-left: 20px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(199, 118, 12);
+  border: 2px solid blueviolet;
+  cursor: pointer;
 }
